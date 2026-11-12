@@ -61,7 +61,6 @@ textarea {
   font-size: 1rem;
 }
 
-/* 第 7a 步：使用 Flexbox 让单选按钮与对应的 label 在同一行，每组占一行 */
 .radio-option {
   display: flex;
   align-items: center;
