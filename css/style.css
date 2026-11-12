@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #00274C; 
+  text-align: center;
+}
+
+main > p {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto 15px auto;
+}
+
+form {
+  background-color: #00274C; 
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+  color: white; 
+  border-radius: 8px;
+}
+
+fieldset {
+  border: 1px solid #FFCB05;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #FFCB05;
+  padding: 0 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* 第 7a 步：使用 Flexbox 让单选按钮与对应的 label 在同一行，每组占一行 */
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.radio-option input[type="radio"] {
+  margin: 0;
+  width: auto;
+}
+
+.radio-option label {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+/* 增强键盘聚焦的无障碍可见度 */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #FFCB05;
+  outline-offset: 2px;
+}
+
+input[type="submit"] {
+  background-color: #FFCB05; 
+  color: #00274C; 
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #e5b600;
+}
